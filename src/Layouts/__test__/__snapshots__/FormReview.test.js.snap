@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormContent Match snapshot 1`] = `
+<div
+  className="form-review"
+>
+  <h3>
+    Review
+  </h3>
+  <p>
+    Please double check the information.
+  </p>
+  <table
+    className="form-review_content table"
+  >
+    <tbody>
+      <tr>
+        <th>
+          First name
+        </th>
+        <td
+          data-testid="data-FirstName"
+        >
+          Ultimate
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Last name
+        </th>
+        <td
+          data-testid="data-LastName"
+        >
+          Hokon
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Phone number
+        </th>
+        <td
+          data-testid="data-PhoneNumber"
+        >
+          +19876543210
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Email address
+        </th>
+        <td
+          data-testid="data-EmailAddress"
+        >
+          ultimate.hokon@gmail.com
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Favorite pokemon
+        </th>
+        <td
+          data-testid="data-FavoritePokemon"
+        >
+          Venusaur
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="d-grid gap-3 form-review_button"
+  >
+    <button
+      className="btn btn-outline-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Back
+    </button>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;

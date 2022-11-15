@@ -1,0 +1,117 @@
+.App {
+  padding: 0;
+  margin: 0;
+}
+
+/* Common Variables */
+$orange: #e97c2f;
+$yellow: #f8e71f;
+$light: #ffffff;
+$dark: #323232;
+$red: #ee4135;
+$error: #d93025;
+$gray: #616161;
+
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(180deg, $red calc(50% - 50px), $dark calc(50%), $light calc(50% + 50px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Styles */
+.form {
+  margin: 40px 0;
+  width: 40%;
+  min-width: 500px;
+  height: auto;
+  background-color: $light;
+  border: 20px solid $dark;
+  border-radius: 10px;
+  .form-image {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}
+
+/* Form Content/Review Styles */
+.form-content, .form-review {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: $dark;
+  padding: 40px 20px;
+  padding-bottom: 20px;
+
+  .form-content_button, .form-review_button {
+    width: 100%;
+    .btn-primary {
+      background-color: $dark;
+      color: $light;
+      border: none;
+      &:hover {
+        background-color: rgba($dark, 0.7);
+      }
+    }
+    .btn-outline-primary {
+      border: 1px solid $dark;
+      color: $dark;
+      &:hover {
+        background-color: $dark;
+        color: $light;
+      }
+    }
+  }
+
+  .form-content_alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    font-weight: 700;
+  }
+  .form-content_input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .form-review_content {
+    color: $dark;
+    margin-bottom: 30px;
+  }
+}
+
+/* Success Styles */
+.success {
+  width: 40%;
+  padding: 20px 20px 10px 20px;
+  .success_title {
+    margin-bottom: 20px;
+  }
+  .success_text {
+    color: $gray;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+/* Form Field Styles */
+.error-msg {
+  color: $error !important;
+}
+
+.error-input {
+  border: 2px solid #dc3545 !important;
+  border-radius: 6px !important;
+}
+
+.table-view {
+  margin: 20px 10px;
+}
